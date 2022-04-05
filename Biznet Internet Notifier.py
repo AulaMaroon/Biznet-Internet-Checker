@@ -26,9 +26,10 @@ def pinging():
             time.sleep(int(mp3time.info.length))
         else:
             os.system('cls')
-            print('Ping is still above ' + str(baseline))
-            print(response.rtt_avg_ms)
-            
+            avg = response.rtt_avg_ms
+            print('Biznet Ping Notifier')
+            print()
+            print('Current Average Ping Is ' + str(avg) + ' Above The Set Threshold ' + str(baseline))
 
 
 pinging()
